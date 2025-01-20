@@ -1,7 +1,7 @@
-streamlit==1.41.1
-tensorflow==2.18.0
-pandas==2.2.2
-numpy==1.26.4
-seaborn== 0.13.2
-sklearn==1.5.1
-matplotlib==3.8.0
+streamlit
+tensorflow
+pandas
+numpy
+seaborn
+sklearn
+matplotlib
