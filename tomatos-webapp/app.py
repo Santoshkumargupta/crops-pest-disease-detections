@@ -13,8 +13,8 @@ from PIL import Image
 import os
 
 # Load models
-cnn_model = load_model("CNN_TomatoModel.h5")
-inception_model = load_model("inceptionv3_Tomato.h5")
+cnn_model = load_model("./CNN_TomatoModel.h5")
+inception_model = load_model("./inceptionv3_Tomato.h5")
 
 def getModel(model_option):
     # Select model
