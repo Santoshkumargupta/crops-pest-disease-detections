@@ -106,28 +106,28 @@ if uploaded_file:
 
 
 
-test_path = "D:/Master/Reseach/Dataset-for-Crop-Pest-and-Disease-Detection/CCMT Dataset-Augmented/Tomato/test_set/"
-test_datagen = ImageDataGenerator(rescale=1./255)
+# test_path = "D:/Master/Reseach/Dataset-for-Crop-Pest-and-Disease-Detection/CCMT Dataset-Augmented/Tomato/test_set/"
+# test_datagen = ImageDataGenerator(rescale=1./255)
 
-test_generator = test_datagen.flow_from_directory(
-        test_path,
-        target_size=input_size,
-        batch_size=32,
-        class_mode='categorical',
-        shuffle=True)
+# test_generator = test_datagen.flow_from_directory(
+#         test_path,
+#         target_size=input_size,
+#         batch_size=32,
+#         class_mode='categorical',
+#         shuffle=True)
 
 
 
-# Evaluate Metrics (Optional Dataset for Evaluation)
-if st.sidebar.checkbox("Show Evaluation Metrics", value=False):
-    # Evaluate model
-    test_loss, test_accuracy = model.evaluate(test_generator, batch_size=32)
+# # Evaluate Metrics (Optional Dataset for Evaluation)
+# if st.sidebar.checkbox("Show Evaluation Metrics", value=False):
+#     # Evaluate model
+#     test_loss, test_accuracy = model.evaluate(test_generator, batch_size=32)
 
-    print(f"Testing Loss:{test_loss}")
-    print(f"Testing Accuracy:{test_accuracy * 100:.4f}%")
+#     print(f"Testing Loss:{test_loss}")
+#     print(f"Testing Accuracy:{test_accuracy * 100:.4f}%")
 
-    st.write(f"**Test Loss:** {test_loss:.4f}")
-    st.write(f"**Test Accuracy:** {test_accuracy * 100:.2f}%")
+#     st.write(f"**Test Loss:** {test_loss:.4f}")
+#     st.write(f"**Test Accuracy:** {test_accuracy * 100:.2f}%")
 
 
 
